@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>OnePlus5</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/OnPlus5.css" />
+		
+		<style>
+			
+			.nav-bar .navbar{
+				margin-bottom: 0;
+			}
+			.section-hero{
+				background: #EEEEEE;
+				height: 56vw;
+			}
+			.section-hero .bg{
+				position: absolute;
+				right: 0;
+				width: 100%;
+				height: 56vw;
+				background: url(img/phone.png) top center no-repeat;
+				/*宽高比例   宽自动伸缩  高占100%比例，可以不断增大超过100%，高度也随着整体比例增高*/
+				background-size: auto 120%;																	
+			}
+			.section-hero .abs-fadeout p{
+				text-align: center;
+			}
+			.section-hero  .ant1,
+			.section-hero  .ant2{
+				font-size: 34px;
+			}
+			.section-hero .abs-fadeout .ant3{
+				font-size: 26px;
+			}
+			.section-hero .abs-fadeout .ant3 i{
+				font-style: normal;
+			    font-size: 14px;
+			    padding-left: 10px;
+			}
+			.section-video{				
+				height: 31vw;
+			}
+			.section-video .s-contanier{
+				position: absolute;
+    			left: 0;
+				width: 100%;
+				height: 31vw;
+				background: url(img/section-video-bg.jpg) no-repeat;
+				background-size: contain;		
+			}
+			.section-video a{				
+				position: relative;
+				width: 60px;
+    			height: 60px;
+			    top: 13vw;
+			    left: 48%;
+			    display: block;
+				background: url(img/section-video-icon.png) no-repeat;
+				background-size:cover ;		
+			}    
+			.section-dual-camera{
+				position: relative;
+				width: 100%;
+				margin-top: -1px;
+			}
+			.section-dual-camera .container-fluid{
+				padding: 0;
+			}
+			.section-dual-camera .first{
+				position: relative;
+				height: 68vw;
+				background: url(img/first-bg.jpg) no-repeat;
+				background-size: cover;
+			}
+			.section-dual-camera .first-top{
+				text-align: center;
+				font-size: 36px;
+				padding: 1rem;
+			}
+			.section-dual-camera .first-content{
+				position: relative;
+				top: 50vh;
+				/*background: red;*/
+				margin-left: 8%;
+			}
+			.section-dual-camera .con-progress .ant1{
+				padding: 5px;
+				font-size: 20px;
+			}
+			.section-dual-camera .con-progress .ant2{
+				color: #666;
+			}
+			.section-dual-camera .first-content ol{
+			    margin-top: 5vw;
+			}
+			.section-dual-camera .first-content ol li,
+			.third .carsel .btn-ul li{	
+				width: 50px;			
+				height: 24px;
+				padding-top: 12px;
+				margin-right: 20px;
+				float: left;
+				/*background: blue;*/
+			}
+			.section-dual-camera .first-content ol li:before,
+			.third .carsel .btn-ul li:before{	
+				content: "";
+				display: block;		
+				height: 2px;
+				background: #000;
+				opacity: 0.3;
+			}
+			.section-dual-camera .first-content ol li.bgchanged:before,
+			.third .carsel .btn-ul li.bgchanged:before{
+				background: #000;
+				opacity: 1;
+			}
+			.section-dual-camera .phone-box{
+				width: 20%;
+				height: 52%;
+				background: gold;
+				position: absolute;
+				top: 29%;
+				right: 24%;
+			}
+			.section-dual-camera .phone-box li{
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+			.section-dual-camera .phone-box1{				
+				background-image: url(img/portrait-screen.jpg);	
+				display: none;			
+			}
+			.section-dual-camera .phone-box2{				
+				background-image: url(img/pro-screen.jpg);		
+				display: none;		
+			}
+			.section-dual-camera .phone-box3{				
+				background-image: url(img/smart-screen.jpg);		
+				display: none;		
+			}		
+			.section-dual-camera .con-progress{
+				height: 10vw;
+			}
+			.section-dual-camera .con-progress li{		
+				position: absolute;		
+				display: none;				
+			}
+			.section-dual-camera .first-content ol li,
+			.third .carsel .btn-ul li{
+				cursor: pointer;
+			}		
+			.section-dual-camera .first-content ol li:hover:before,
+			.third .carsel .btn-ul li:hover:before
+			{
+				background: #000;
+				opacity: 0.5;
+			}
+			.section-dual-camera .first .cq_active{
+				display: block;				
+			}
+			.section-dual-camera .first-content .cq_active:before,
+			.third .carsel .btn-ul .cq_active:before{
+				content: "";
+				background: #000;
+				opacity: 1;
+			}
+			.section-dual-camera .second{
+				/*position: relative;*/
+			}
+			.section-dual-camera .text-box{
+				/*position: absolute;
+				top: 36vw;*/
+				width: 100%;
+				padding: 6%;
+			}
+			.section-dual-camera .second .img-box{
+				width: 100%;
+				height: 36vw;
+				background: url(img/lens.jpg) center;
+				background-repeat: no-repeat;
+				/*position: absolute;*/
+				background-size: cover;				
+			}
+			.section-dual-camera .second .text-box img{
+				width: 50px;
+				height: 50px;
+			}
+			.section-dual-camera .second .text-box h3{
+				font-size: 20px;
+				text-align: center;
+			}
+			.section-dual-camera .second .text-box p{
+				padding: 10px 10px 0 0;
+				font-size: 1.6rem;
+				color: #000;
+				text-align: center;
+				opacity: 0.5;
+			}
+			.section-dual-camera .third{
+				width: 100%;
+				height: 73vw;
+				background: #fafafa;
+			}
+			.section-dual-camera .third h2{
+				text-align: center;
+				padding-top: 20px;
+			}
+			.section-dual-camera .third .q{
+				height: 200px;
+				background: red;
+			}
+			
+			/*nnnnn*/
+			.carsel{
+				width: 100%;
+				height: 73vw;
+				/*background: yellow;*/
+				position: relative;
+			}
+			.carsel ul li{
+				list-style: none;
+				float: left;
+			}
+			.img-ul{
+				height: 54vw;
+				overflow: hidden;
+			}
+			.img-ul ul{
+				width: 19000px;
+				margin-left: 60px;
+			}
+			.img-ul li{
+				margin-right: 138px;
+			}
+			.img-ul li img{
+				/*width: 70%;*/
+				height: 621px;
+				margin: 108px 0 0 0;
+			}
+			.img-ul li img:first-child{
+				margin: 108px 0 0 123px;
+			}
+			.btn-ul{
+				padding-left: 295px;
+			}
+			.btn-ul li{
+				/*width: 5%;
+				height: 10px;
+				background: red;
+				margin: 30px;*/
+			}
+			@media (max-width: 640px) {
+				.section-video a{	
+					top: 10vw;
+					left: 46%;
+				}
+				.section-hero .bg{					
+					background-size: auto 200%;																	
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<!--导航开始-->
+			<div class="index_top">
+				<!--<div class="container">-->
+					<!--导航左边的图标-->
+					<div class="logo_left pull-left col-md-3 col-sm-3 col-xs-3">
+						<span><img src="img/logo.png" class="img-responsive"></span>
+					</div>
+					<!--导航右边的图标-->
+					<div class="logo_right pull-right">												
+						<li class="hidden-xs"><a href=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>		
+						<li><a href=""><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></span></li> 
+						<li><a href=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+					</div>
+					
+					<!---->
+					<nav class="navbar navbar-default cq_navbar_header">		
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed cq_navbar_button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul id="cq_navbar" class="nav navbar-nav">
+									<li><a href="">OnePlus 5</a></li>
+									<li><a href="">商城</a></li>
+									<li><a href="">服务</a></li>
+									<li><a href="">博客</a></li>
+									<li><a href="">论坛</a></li>
+								</ul>	
+								<div class="i-show-menu">
+									<i></i>
+								</div>
+								<div class="input-group cq_ing hidden-lg hidden-md hidden-sm">
+								  <input type="text" class="form-control" placeholder="搜索您的商品名称" aria-describedby="basic-addon2">
+								  <span class="input-group-addon glyphicon glyphicon-search" id="basic-addon2"></span>
+								</div>
+						    </div><!-- /.navbar-collapse -->
+					</nav>
+
+			</div>	
+			<!--导航结束-->
+			
+			<!--正文开始-->
+			<div class="mian-body">
+				<div class="nav-bar">
+					<nav class="navbar navbar-default container-fluid">
+						<div class="container">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      <a class="navbar-brand" href="#">OnePlus 5</a>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						      <ul class="nav navbar-nav cq-nav-left visible-lg visible-md">
+						        <li class="cq_active"><a href="#">高清双摄</a></li>
+						        <li><a href="#">设计</a></li>
+						        <li><a href="#">Dash极速闪充</a></li>
+						        <li><a href="#">体验</a></li>
+						        <li><a href="#">屏幕</a></li>
+						        <li><a href="#">网络</a></li>
+						         <li><a href="#">参数</a></li>
+						      </ul>
+						      <!--<div class="nav-sale navbar-right col-md-2 col-sm-6 col-xs-6">
+						      	<a href="">立即购买</a>
+						      </div>-->
+						      <ul class="nav navbar-nav navbar-right cq-nav-right col-md-2 col-sm-6 col-xs-6">
+						        <li><a href="#">立即购买</a></li>					        
+						      </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
+				</div>
+				<section class="section section-hero container-fluid">
+					<div class="container">
+						<div class="abs-fadeout">
+							<p class="ant1">OnePlus 5</p>
+							<p class="ant2">高清双摄  就是清晰</p>
+							<p class="ant3">￥2999<i>起</i></p>							
+						</div>
+						<div class="bg">
+							<!--<img src="img/phone.png"/>-->
+						</div>
+					</div>
+				</section>
+				<section class="section section-video container-fluid">
+					<div class="s-contanier"></div>
+					<a href=""></a>
+				</section>
+				
+				<section class="section section-dual-camera">
+					<div class="container-fluid">
+						<div class="first">
+							<div class="first-top col-lg-12 col-md-12 col-sm-12 col-xs-12">高清双摄</div>
+							<div class="first-content col-lg-4 col-md-4 col-sm-5 hidden-xs">
+								<div class="con-progress">
+									<ul>
+										<li class="cq_active">
+											<p class="ant1">人像模式</p>
+											<p class="ant2">人像识别更为精准，背景虚化更有意境。利用景深效果突出你的脸庞，让照片中的你，就是瞩目的焦点。</p>	
+										</li>
+										<li>
+											<p class="ant1">美颜模式</p>
+											<p class="ant2">拍摄远景时，2 倍无损变焦可以帮你拉近一半距离，拍到的照片就像近看一样清晰。遥不可及的美景细节，触手可及。</p>	
+										</li>
+										<li>
+											<p class="ant1">自然模式</p>
+											<p class="ant2">人像识别更为精准，背景虚化更有意境。利用景深效果突出你的脸庞，让照片中的你，就是瞩目的焦点。</p>	
+										</li>
+									</ul>
+								</div>
+								<ol class="">
+									<li class="cq_active"></li>
+									<li></li>
+									<li></li>
+								</ol>
+							</div>
+							<div class="phone-box" id="cq_carousel">
+								<ul>
+									<li class="phone-box1 cq_active"></li>
+									<li class="phone-box2"></li>
+									<li class="phone-box3"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="second">
+							<div class="img-box"></div>
+							<div class="text-box container">
+								<div class="row">
+								  	<div class="col-sm-6 col-md-4">
+								    	<div class="thumbnail">
+								      		<img src="img/text-img1.png" alt="...">
+								      		<div class="caption">
+									        	<h3>高清双摄</h3>
+									        	<p>比 PDAF 相位对焦快 40% 的对焦速度，指哪儿对哪儿。让你没有对焦慢的等待，只有好照片的期待。</p>
+								       		</div>
+								    	</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+								    	<div class="thumbnail">
+								      		<img src="img/text-img2.png" alt="...">
+								      		<div class="caption">
+									        	<h3>双核对焦</h3>
+									        	<p>后置 2000 万 + 1600 万高清摄像头，清晰得经得起放大查看，经得起时间考验，更经得起挑剔目光。</p>
+								        	</div>
+								    	</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+								    	<div class="thumbnail">
+								      		<img src="img/text-img3.png" alt="...">
+								      		<div class="caption">
+									        	<h3>f /1.7 大光圈</h3>
+									        	<p>进光量比 OnePlus 3T 增加 34%。白天拍出的照片，更加清晰。夜晚的精彩，亦不因夜色而落幕。</p>
+								        	</div>
+								    	</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="third">
+							<h2>Shot on OnePlus</h2>
+							<div class="carsel">
+								<div class="img-ul">
+									<ul>
+										<li><img src="cal-img/example1.jpg" alt="" /></li>
+										<li><img src="cal-img/example2.jpg" alt="" /></li>
+										<li><img src="cal-img/example3.jpg" alt="" /></li>
+										<li><img src="cal-img/example4.jpg" alt="" /></li>
+										<li><img src="cal-img/example5.jpg" alt="" /></li>
+										<li><img src="cal-img/example6.jpg" alt="" /></li>
+										<li><img src="cal-img/example7.jpg" alt="" /></li>
+										<li><img src="cal-img/example8.jpg" alt="" /></li>
+										<li><img src="cal-img/example9.jpg" alt="" /></li>
+										<li><img src="cal-img/example10.jpg" alt="" /></li>
+									</ul>
+								</div>
+								<div class="btn-ul">
+									<ul>
+										<li class="cq_active"></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>			
+							</div>
+						</div>
+					</div>					
+				</section>
+			</div>
+			<!--正文结束-->	
+				
+			<!--尾部开始-->
+			<!--<div class="footer">					
+				<div class="footA">
+					<div class="container">						-->
+					<!--col-md以上时显示，以下隐藏-->
+						<!--<div class="footA_left col-md-9 col-sm-9 hidden-xs">
+							<div class="footA_left1">
+								<ul>
+									<li>一加产品</li>
+									<li><a href="">OnePlus 5</a></li>
+									<li><a href="">一加手机 3T</a></li>
+									<li><a href="">一加手机 3</a></li>
+								</ul>
+							</div>
+							<div class="footA_left1">
+								<ul>
+									<li>关于一加</li>
+									<li><a href="">OnePlus 5</a></li>
+									<li><a href="">一加手机 3T</a></li>
+									<li><a href="">一加手机 3</a></li>
+								</ul>
+							</div>
+							<div class="footA_left1">
+								<ul>
+									<li>关于一加</li>
+									<li><a href="">OnePlus 5</a></li>
+									<li><a href="">一加手机 3T</a></li>
+									<li><a href="">一加手机 3</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footA_right col-md-3 col-sm-3 hidden-xs">
+							<p>123456789</p>
+							<a href=""><li>在线客服</li></a>
+						</div>						
+					</div>					-->
+					<!--col-md以上时显示，以下隐藏-->
+					<!--<div class="footA_left_xs container-fluid visible-xs">
+							<div class="">
+								<ul>
+									<li class="xs_title">一加产品<span class="arrow_up"></span></li>
+									<li class="xs_mention"><a href="">OnePlus 5</a></li>
+									<li class="xs_mention"><a href="">一加手机 3T</a></li>
+									<li class="xs_mention"><a href="">一加手机 3</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<ul>
+									<li class="xs_title">关于一加<span class="arrow_up"></span></li>
+									<li class="xs_mention"><a href="">OnePlus 5</a></li>
+									<li class="xs_mention"><a href="">一加手机 3T</a></li>
+									<li class="xs_mention"><a href="">一加手机 3</a></li>
+								</ul>
+							</div>
+							<div class="">
+								<ul>
+									<li class="xs_title">关于一加<span class="arrow_up"></span></li>
+									<li class="xs_mention"><a href="">OnePlus 5</a></li>
+									<li class="xs_mention"><a href="">一加手机 3T</a></li>
+									<li class="xs_mention"><a href="">一加手机 3</a></li>
+								</ul>
+							</div>
+							<div class="kefu_xs">
+								<p class="p1">客服电话：</p>
+								<p class="p2">123456789</p>								
+								<p class="p3">Change location</p>
+
+								<a href=""><li>在线客服</li></a>
+							</div>							
+					</div>
+					
+				</div>		
+			
+				<div class="footB container-fluid" style="padding: 0;">
+					<div class="foot_bottom col-md-12 col-sm-12 col-xs-12">
+						<div class="footBottom_bao">
+							<span>© 2013-2017 OnePlus. All Rights Reserved. <a href="">(粤ICP备13088308号-1)</a></span>
+							<span><a href=""><img src="img/cnnic.png"></a></span>
+							<span><a href=""><img src="img/sm_83x30.png"></a></span>
+							<span>
+								<a href="">
+									<img src="img/record.png" />
+									粤公网安备 44030402000178号
+								</a>
+							</span>
+						</div>						
+					</div>
+				</div>
+			</div>-->
+			
+				
+			<!--尾部结束-->
+		</div>
+				
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script src="js/OnePlus5.js"></script>
+		<script>
+			$(function(){
+				$('.btn-ul li').click(function(){
+					var idx = $(this).index();
+					$('.img-ul').animate({'margin-left':idx*(-960)},1000)
+					$(this).addClass('bgchanged').siblings().removeClass('bgchanged cq_active');
+//					$('.img-ul').css('margin-left',(idx+1)*(-960));
+				})
+			})
+		</script>
+	</body>
+</html>

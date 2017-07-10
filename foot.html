@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			ul li{
+				list-style: none;
+			}
+			.footer{
+				width: 100%;
+				background: #fff;
+			}
+			.footer .container{
+				background: #fff;
+			}
+			.footer .container ul li{
+				/*border: 1px solid #000000;*/
+				padding: 35px 0;
+			}
+			.footer .container ul li i{
+				display: block;
+				width: 80px;
+				height: 80px;
+				/*background: blue;*/
+				/*为什么只有这样才能设置图片居中呢，relative在这里什么意思*/
+				position: relative;
+				left: 35%;
+			}
+			.footer .container ul li p{
+				text-align: center;
+				color: #565b62;
+				padding:2px 5px;
+			}
+			.footer .container ul li:nth-child(1) i{
+				background-image: url(img/serviceIcons-s01768a854d.png);
+				background-position:0 -80px;
+			}
+			.footer .container ul li:nth-child(2) i{
+				background-image: url(img/serviceIcons-s01768a854d.png);
+				background-position:0 -240px;
+			}
+			.footer .container ul li:nth-child(3) i{
+				background-image: url(img/serviceIcons-s01768a854d.png);
+				background-position:0 0;
+			}
+			.footer .container ul li:nth-child(4) i{
+				background-image: url(img/serviceIcons-s01768a854d.png);
+				background-position:0 -160px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="footer">
+			<div class="container">
+				<ul>
+					<li class="col-md-3 col-sm-3 col-xs-6">
+						<a href="">
+							<i></i>
+							<p>1小时售后派单响应</p>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-3 col-xs-6"><a href="">
+						<a href="">
+							<i></i>
+							<p>1小时售后派单响应</p>
+						</a>
+					</a></li>
+					<li class="col-md-3 col-sm-3 col-xs-6"><a href="">
+						<a href="">
+							<i></i>
+							<p>1小时售后派单响应</p>
+						</a>
+					</a></li>
+					<li class="col-md-3 col-sm-3 col-xs-6"><a href="">
+						<a href="">
+							<i></i>
+							<p>1小时售后派单响应</p>
+						</a>
+					</a></li>
+				</ul>
+			</div>			
+		</div>
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>

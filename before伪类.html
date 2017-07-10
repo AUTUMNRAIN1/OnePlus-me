@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+
+		<i class="changed"></i>
+		<style>
+			i{
+				display: block;
+			}
+			i:before{				
+				content: '';
+				display: inline-block;				
+				width: 12px;
+				height: 1px;
+				background: #7E7E7E;		
+				transform: rotate(-40deg);
+				-webkit-transform: rotate(-40deg);
+				transform-origin: 100% 50%;
+			}
+			/*i:after {				
+				content: '';
+				display: inline-block;
+				width: 12px;
+				height: 1px;
+				background: #7e7e7e;
+				transform: rotate(40deg);
+				-webkit-transform: rotate(40deg);
+				transform-origin: 0 50%;
+			}*/
+			
+			i.changed:before {
+				transform: rotate(40deg);
+				-webkit-transform: rotate(40deg);
+			}
+			
+		</style>
+		<script>
+			$(function(){
+				$('i').click(function(){
+					$(this).toggleClass('changed');
+				})
+			})
+		</script>
+	</body>
+</html>
