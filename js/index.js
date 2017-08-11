@@ -27,7 +27,6 @@ $(function(){
 		$('.cq_navbar_header #cq_navbar').slideDown();
 		$('.i-show-menu').removeClass('i_show');
 //		alert(1)
-
 	})
 	
 })

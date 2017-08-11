@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商城</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			.second-top{				
+				height: 150px;
+				background: #CCCCCC;
+				padding: 0;
+				box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2) inset;
+				transition: all 1s;
+			}
+			.second-top .second-see{
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				transition: all 1s;
+			}
+			.second-top .second-see ul{
+				display: flex;
+				width: 100%;
+				height: 100%;
+
+			}
+			.second-top .second-see li{
+				width: 10%;
+				height: 100%;
+				/*border: 1px solid #000000;*/				
+				/*float: left;*/
+			}
+			.second-top .second-see li:nth-child(1){
+				margin-left: 16%;
+			}
+			.second-top .second-see li i{
+				display: block;
+				width: 41px;
+				height: 41px;
+				background: #eee;
+				border-radius: 50%;
+				margin: 20% auto 5% auto;
+				transition: all 1s;
+			}
+			.second-top .second-see li .i1{
+				background-image: url(img/categoryicons-s4160ec4a61.png);
+				background-position: 0 -451px;
+			}
+			.second-top .second-see li .i2{
+				background-image: url(img/categoryicons-s4160ec4a61.png);
+				background-position: 0 -41px;
+			}
+			.second-top .second-see li .i3{
+				background-image: url(img/categoryicons-s4160ec4a61.png);
+				background-position: 0 -287px;
+			}
+			.second-top .second-see li .i4{
+				background-image: url(img/categoryicons-s4160ec4a61.png);
+				background-position: 0 -205px;
+			}
+			.second-top .second-see li .i5{
+				background-image: url(img/categoryicons-s4160ec4a61.png);
+				background-position: 0 -123px;
+			}
+			.second-top .second-see li .i6{
+				background-image: url(img/categoryicons-s4160ec4a61.png);
+				background-position: 0 -369px;
+			}
+			.second-top .second-see span{
+				text-align: center;
+				display: block;
+				color: #000000;
+			}
+			.second-top .second-see span.changeColor{
+				color: red;
+			}
+			.top-banner{
+				height: 500px;
+				background-image: url(img/OnePlus5Shopbanner0704-large.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				z-index: 999;
+			}
+		</style>		
+	</head>
+	<body>
+		<div class="mall-all">
+			<!--导航开始-->
+			<div class="index_top">
+				<!--<div class="container">-->
+					<!--导航左边的图标-->
+					<div class="logo_left pull-left col-md-3 col-sm-3 col-xs-3">
+						<span><img src="img/logo.png" class="img-responsive"></span>
+					</div>
+					<!--导航右边的图标-->
+					<div class="logo_right pull-right">												
+						<li class="hidden-xs"><a href=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>		
+						<li><a href=""><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></span></li> 
+						<li><a href=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+					</div>
+					
+					<!---->
+					<nav class="navbar navbar-default cq_navbar_header">		
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed cq_navbar_button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul id="cq_navbar" class="nav navbar-nav">
+									<li><a href="">OnePlus 5</a></li>
+									<li><a href="">商城</a></li>
+									<li><a href="">服务</a></li>
+									<li><a href="">博客</a></li>
+									<li><a href="">论坛</a></li>
+								</ul>	
+								<div class="i-show-menu">
+									<i></i>
+								</div>
+								<div class="input-group cq_ing hidden-lg hidden-md hidden-sm">
+								  <input type="text" class="form-control" placeholder="搜索您的商品名称" aria-describedby="basic-addon2">
+								  <span class="input-group-addon glyphicon glyphicon-search" id="basic-addon2"></span>
+								</div>
+						    </div><!-- /.navbar-collapse -->
+					</nav>
+
+			</div>	
+			<!--导航结束-->
+			
+			<!--吸顶导航栏开始-->
+			<div class="second-top container-fluid">
+				<div class="second-see">
+					<ul>
+						<li>
+							<a href="">
+								<i class="i1"></i>
+								<span>手机</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="i2"></i>
+								<span>耳机/音箱</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="i3"></i>
+								<span>壳、后盖、膜</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="i4"></i>
+								<span>适配器/数据线</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="i5"></i>
+								<span>套装</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="i6"></i>
+								<span>生活馆</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!--吸顶导航栏结束-->
+			
+			<div class="top-banner">
+				<!--<img src="" />-->
+			</div>
+			
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		</div>
+	</body>
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<!--<script src="js/OnePlus5.js"></script>-->
+		<script>
+			$(function(){
+				$(window).scroll(function(){
+					var navTop = $('.index_top').height();
+					if($(document).scrollTop()>=navTop){
+						$('.second-top .second-see li i').css('transform','scale(0)');
+						$('.second-top').addClass('navbar-fixed-top');
+						$('.second-top .second-see').css('height','40%');
+						$('.second-top').css('height','60px');
+						$('.second-top .second-see span').css('margin-top','-38%');
+					}
+					else{
+						$('.second-top .second-see li i').css('transform','scale(1)');
+						$('.second-top').removeClass('navbar-fixed-top');
+						$('.second-top .second-see').css('height','100%');
+						$('.second-top').css('height','150px');
+						$('.second-top .second-see span').css('margin-top','0');
+					}
+				})
+				$('.second-top .second-see li').hover(function(){
+					var idx = $(this).index();
+					$('.second-top .second-see li span').eq(idx).toggleClass('changeColor');
+				})
+			})
+		</script>
+</html>

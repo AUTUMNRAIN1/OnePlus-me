@@ -1,4 +1,11 @@
 @charset "utf-8";
+			body{
+				position: relative;
+			}
+			.nav-bar .navbar{
+				margin-bottom: 0;
+				background: rgba(255,255,255,.8);
+			}
 			.nav-bar .nav-sale{
 				height: 100%;
 				
@@ -26,4 +33,940 @@
 			}
 			.navbar .cq-nav-right li a{
 				color: #fff;
+			}
+			
+			.section-hero{
+				position: relative;
+				background: #EEEEEE;
+				height: 56vw;			
+			}
+			.section-hero .bg{
+				position: absolute;
+				right: 0;
+				width: 100%;
+				height: 56vw;
+				background: url(../img/phone.png) top center no-repeat;
+				/*宽高比例   宽自动伸缩  高占100%比例，可以不断增大超过100%，高度也随着整体比例增高*/
+				background-size: auto 120%;	
+				top: 20vw;															
+			}
+			.section-hero .abs-fadeout p{
+				text-align: center;
+				position: relative;
+				top: 20px;
+			}
+			.section-hero  .ant1,
+			.section-hero  .ant2{
+				font-size: 34px;
+			}
+			.section-hero .abs-fadeout .ant3{
+				font-size: 26px;
+			}
+			.section-hero .abs-fadeout .ant3 i{
+				font-style: normal;
+			    font-size: 14px;
+			    padding-left: 10px;
+			}
+			.section-video{				
+				height: 31vw;
+			}
+			.section-video .s-contanier{
+				position: absolute;
+    			left: 0;
+				width: 100%;
+				height: 31vw;
+				background: url(../img/section-video-bg.jpg) no-repeat;
+				background-size: contain;		
+			}
+			.section-video a{				
+				position: relative;
+				width: 60px;
+    			height: 60px;
+			    top: 13vw;
+			    left: 48%;
+			    display: block;
+				background: url(../img/section-video-icon.png) no-repeat;
+				background-size:cover ;		
+			}    
+			.section-dual-camera{
+				position: relative;
+				width: 100%;
+				margin-top: -1px;
+			}
+			.section-dual-camera .container-fluid{
+				padding: 0;
+			}
+			.section-dual-camera .first{
+				position: relative;
+				height: 68vw;
+				background: url(../img/first-bg.jpg) no-repeat;
+				background-size: cover;
+			}
+			.section-dual-camera .first-top{
+				text-align: center;
+				font-size: 36px;
+				padding: 1rem;
+				top: 45px;
+			}
+			.section-dual-camera .first-content{
+				position: relative;
+				top: 50vh;
+				/*background: red;*/
+				margin-left: 8%;
+			}
+			.section-dual-camera .con-progress{
+				position: relative;
+    			top: 5vw;
+			}
+			.section-dual-camera .con-progress .ant1{
+				padding: 5px;
+				font-size: 20px;
+				
+			}
+			.section-dual-camera .con-progress .ant2{
+				color: #666;
+			}
+			.section-dual-camera .first-content ol{
+			    margin-top: 5vw;
+			}
+			.section-dual-camera .first-content ol li,
+			.third .carsel .btn-ul li{	
+				width: 50px;			
+				height: 24px;
+				padding-top: 12px;
+				margin-right: 20px;
+				float: left;
+				cursor: pointer;
+				/*background: blue;*/
+			}
+			.section-dual-camera .first-content ol li:before,
+			.third .carsel .btn-ul li:before
+			{	
+				content: "";
+				display: block;		
+				height: 2px;
+				background: #000;
+				opacity: 0.3;
+			}
+			.section-dual-camera .first-content ol li.bgchanged:before,
+			.third .carsel .btn-ul li.bgchanged:before{
+				background: #fff;
+				opacity: 1;
+			}
+			.section-dual-camera .phone-box{
+				width: 20%;
+				height: 52%;
+				
+				position: absolute;
+				top: 29%;
+				right: 24%;
+			}
+			.section-dual-camera .phone-box li{
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+			.section-dual-camera .phone-box1{				
+				background-image: url(../img/portrait-screen.jpg);	
+				display: none;			
+			}
+			.section-dual-camera .phone-box2{				
+				background-image: url(../img/pro-screen.jpg);		
+				display: none;		
+			}
+			.section-dual-camera .phone-box3{				
+				background-image: url(../img/smart-screen.jpg);		
+				display: none;		
+			}		
+			.section-dual-camera .con-progress{
+				height: 10vw;
+			}
+			.section-dual-camera .con-progress li{		
+				position: absolute;		
+				display: none;				
+			}
+			.section-dual-camera .first-content ol li,
+			.third .carsel .btn-ul li{
+				cursor: pointer;
+			}		
+			.section-dual-camera .first-content ol li:hover:before,
+			.third .carsel .btn-ul li:hover:before
+			{
+				background: #000;
+				opacity: 0.5;
+			}
+			.section-dual-camera .first .cq_active{
+				display: block;				
+			}
+			.section-dual-camera .first-content .cq_active:before,
+			.third .carsel .btn-ul .cq_active:before{
+				content: "";
+				background: #000;
+				opacity: 1;
+			}
+			.section-dual-camera .second{
+				/*position: relative;*/
+			}
+			.section-dual-camera .text-box{
+				/*position: absolute;
+				top: 36vw;*/
+				width: 100%;
+				padding: 6%;
+			}
+			.section-dual-camera .second .img-box{
+				width: 100%;
+				height: 36vw;
+				background: url(../img/lens.jpg) center;
+				background-repeat: no-repeat;
+				/*position: absolute;*/
+				background-size: cover;						 
+    			position: relative;	
+    			top: 50px;	
+			}
+			.section-dual-camera .second .text-box img{
+				width: 50px;
+				height: 50px;
+			}
+			.section-dual-camera .second .text-box h3{
+				font-size: 20px;
+				text-align: center;
+			}
+			.section-dual-camera .second .text-box p{
+				padding: 10px 10px 0 0;
+				font-size: 1.6rem;
+				color: #000;
+				text-align: center;
+				opacity: 0.5;
+			}
+			.section-dual-camera .second .text-box .thumbnail{
+				border: none;
+			}
+			.section-dual-camera .second .text-box .thumbnail img,
+			.section-dual-camera .second .text-box .thumbnail .caption h3,
+			.section-dual-camera .second .text-box .thumbnail .caption p
+			
+			{
+				position: relative;
+				top: 3vw;
+			}
+			.section-dual-camera .third{
+				width: 100%;
+				height: 66vw;
+				background: #fafafa;
+			}
+			.section-dual-camera .third h2{
+				text-align: center;
+				padding-top: 20px;
+				top: 3vw;
+				position: relative;
+			}
+			
+			/*third的轮播部分*/
+			.carsel{
+				width: 100%;
+				height: 56vw;
+				/*background: yellow;*/
+				position: relative;
+			}
+			.carsel ul li{
+				list-style: none;
+				float: left;
+			}
+			.img-ul{
+				height: 48vw;
+				overflow: hidden;
+			}
+			.img-ul ul{
+				width: 19000px;
+				margin-left: 60px;
+			}
+			.img-ul li{
+				margin-right: 138px;
+			}
+			.img-ul li img{
+				/*width: 70%;*/
+				height: 621px;
+				margin: 108px 0 0 0;
+			}
+			.img-ul li img:first-child{
+				margin: 30px 0 0 123px;
+			}
+			.btn-ul{
+				padding-left: 295px;
+			}
+			.third .casel_left,
+			.third .casel_right
+			{
+				display: block;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background: rgba(0,0,0,0.2);
+				cursor: pointer;
+			}
+			.third .casel_left:hover,
+			.third .casel_right:hover
+			{
+				background: rgba(0,0,0,0.4);
+			}
+			.third .casel_left{
+				position: absolute;
+				top: 50%;
+				left: 5%;
+			}
+			.third .casel_right{
+				position: absolute;
+				top: 50%;
+				right: 5%;
+			}
+			.third .casel_left:before{
+			    content: '';
+			    display: inline-block;
+			    height: 1px;
+			    width: 12px;
+			    background: #eee;
+			    transform: rotate(130deg);
+			    transform-origin: 100% 50%;
+			    margin-top: 50%;
+			    margin-left: 23%;
+			}
+			.third .casel_left:after{
+				content: '';
+			    display: inline-block;
+			    height: 1px;
+			    width: 12px;
+			    background: #eee;
+			    transform: rotate(40deg);
+			    margin-left: -5px;
+			    transform-origin: 0 50%;
+			}
+			.third .casel_right:before{
+			    content: '';
+			    display: inline-block;
+			    height: 1px;
+			    width: 12px;
+			    background: #eee;
+			    transform: rotate(40deg);
+			    transform-origin: 100% 50%;
+			    margin-top: 50%;
+			    margin-left: 39%;
+			}
+			.third .casel_right:after{
+			    content: '';
+			    display: inline-block;
+			    height: 1px;
+			    width: 12px;
+			    background: #eee;
+			    transform: rotate(130deg);
+			    margin-left: -4px;
+			    transform-origin: 0 50%;
+			}
+			.section-design{
+				height: 56vw;
+				background: url(../img/bg.jpg) no-repeat;
+				position: relative;
+			}
+			.section-design .main-box{
+				position: relative;
+			    top: 10%;
+			    color: #fff;
+			}
+			.section-design .main-box h2,
+			.section-design .main-box p{
+				position: relative;
+				top: 3vw;
+			}
+			.section-design .main-box p{
+				font-size: 20px;
+				width: 460px;
+			}
+			.section-design .sub-box{
+				top: 45%;
+    			position: relative;
+			}
+			.section-design .sub-box .sub-img-ul .sub-item{
+				width: 100%;
+				position: absolute;
+				/*top: -30px;*/
+				color: #eee;
+				display: none;
+				top: 4vw;
+			}
+			.section-design .sub-box .sub-img-ul .sub-item:nth-child(1){
+				display: block;
+			}
+			.section-design .sub-box .sub-img-ul .sub-item h3{
+				margin-bottom: 20px;
+			}
+			.section-design .sub-box .sub-img-ul .sub-item p{
+				width: 45%;
+			    color: #fff;
+			    opacity: 0.7;
+			    padding: 0 3rem 2rem 0;
+			    font-size: 16px;
+			    line-height: 26px;
+			}
+			.section-design .img-box{
+				height: 100%;
+			    width: 100%;
+			    position: absolute;
+			    top: 0;
+			    overflow: hidden;
+			}
+			.section-design .img-box li,
+			.section-design .ul-slient-img li{
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				display: none;
+			}
+			.section-design .img-box li{
+				left: 7vw;
+			}
+			.section-design .img-box li:nth-child(1){
+				background-image: url(../img/phone1-w.png);
+				background-repeat:no-repeat ;
+				display: block;
+			}
+			.section-design .img-box li:nth-child(2){
+				background-image: url(../img/phone3.png);
+				background-repeat:no-repeat ;
+			}
+			.section-design .img-box li:nth-child(3){
+				background-image: url(../img/phone4.png);
+				background-repeat:no-repeat ;
+			}
+			.section-design .img-box li:nth-child(4){
+				background-image: url(../img/phone2-silent.png);
+				background-repeat:no-repeat ;
+			}
+			/*nn*/
+			.section-design .sub-btn-ul{
+				position: absolute;
+    			top: 15vw;
+			}
+			.section-design .sub-box .sub-btn-ul .li-itemA{	
+				width: 50px;			
+				height: 24px;
+				padding-top: 12px;
+				margin-right: 20px;
+				float: left;
+				cursor: pointer;
+				/*background: blue;*/
+			}			
+			.section-design .sub-box .sub-btn-ul .li-itemA:before{	
+				content: "";
+				display: block;		
+				height: 2px;
+				background: #fff;
+				opacity: 0.3;
+			}
+			.section-design .sub-box .sub-btn-ul .cq_active:before{
+				background: #fff;
+				opacity: 1;
+			}
+			.section-design .sub-box .sub-btn-ul .li-itemA:hover:before{
+				background: #fff;
+				opacity: 0.5;
+			}
+			.section-design .sub-box .sub-btn-ul .li-itemA.bgchanged:before{
+				background: #fff;
+				opacity: 1;
+			}
+			.section-design .ul-slient{
+				position: relative;
+				width: 100%;
+				top: -1vw;
+				left: 0;
+			}
+			.section-design .sub-box .ul-slient li{
+				width: 30px;
+				height: 30px;
+				background-position: center;
+    			background-size: cover;
+				float: left;
+				margin-right: 20px;
+				cursor: pointer;
+				opacity: 0.6;
+			}
+			.section-design .sub-box .ul-slient .cq_active{
+				opacity: 1;
+			}
+			.section-design .sub-box .ul-slient li:hover{
+				opacity: 0.8;
+			}
+			.section-design .sub-box .ul-slient li.bgchanged{
+				opacity: 1;
+			}
+			.section-design .sub-box .ul-slient li p{
+				color: #fff;
+			    position: absolute;
+			    top: 2.3vw;
+			}
+			.section-color{
+				position: relative;
+				width: 100%;
+				height: 56vw;
+				background-color: #ededed;
+				/*background: yellow;*/
+			}
+			.section-color .color-gray,
+			.section-color .color-black{
+				position: absolute;
+				width: 100%;
+				height: 50%;
+				/*border: 1px solid #000000;*/
+				background-repeat:no-repeat ;
+				cursor: pointer;
+			}
+			.section-color .color-gray{
+				background: url(../img/color-gray.jpg);	
+				background-position: right top;
+				transition:all 2s ease; 	
+				/*top: 0;*/
+				
+				/*transform: translate(-20px,20px);*/
+				top: 3vw;
+				right: 5vw;
+			}
+			.section-color .color-black{
+				background-image: url(../img/color-black.jpg);
+				background-position: center bottom;
+				background-size: cover;
+				transition:all 2s ease; 
+				bottom: 0;
+			}
+			/*添加类，层级问题，记得加上.section-color，不然识别不了*/
+			/*.section-color .color-gray .changedPic不行*/
+			.section-color .changedPic1{				
+				height: 100%;
+				background: url(../img/gray-expand.jpg);	
+				color: #fff;
+			}
+			.section-color .changedPic2{				
+				height: 100%;
+				background: url(../img/black-expand.jpg);	
+				background-size: 100% auto;
+				color: #fff;
+			}
+			.section-color .colorHidden{
+				display: none;
+			}
+			.section-color .color-gray .ant1{
+				position: absolute;
+				top: 50%;
+				left: 20%;
+			}
+			.section-color .color-gray p,
+			.section-color .color-black p{
+				font-size: 20px;
+			}
+			.section-color .color-gray span{
+				font-size: 22px;
+				border: 1px solid #000;
+				border-radius: 50%;
+				left: 30%;
+				cursor: pointer;
+			}
+			.section-color .color-black p{
+				color: #fff;
+			}
+			.section-color .color-black .ant2{
+				position: absolute;
+				color: #fff;
+			    right: 20%;
+			    top: 50%;
+			}
+			.section-color .color-black span{
+				color: #fff;
+				border-radius: 50%;
+			    border: 1px solid #fff;
+			    font-size: 22px;
+			    left: 20%;
+			}
+			.section-design .ul-slient li:nth-child(1){
+				background-image: url(../img/icon-silent.png);
+			}
+			.section-design .ul-slient li:nth-child(2){
+				background-image: url(../img/icon-priority.png);
+			}
+			.section-design .ul-slient li:nth-child(3){
+				background-image: url(../img/icon-all.png);
+			}
+			.section-design .ul-slient-img li:nth-child(1){
+				background-image: url(../img/phone2-silent.png);
+			}
+			.section-design .ul-slient-img li:nth-child(2){
+				background-image: url(../img/phone2-priority.png);
+			}
+			.section-design .ul-slient-img li:nth-child(3){
+				background-image: url(../img/phone2-all.png);
+			}
+			.rotat{
+				transform: rotate(180deg);
+			}
+			.section-test{
+				background: yellowgreen;
+				color: #fff;
+				border-top: 1px solid #CCCCCC;
+			}
+			.section-test .wrap{
+				text-align: center;
+				padding-top: 6vw;
+				background: #000000;
+				
+			}
+			.section-test .wrap .cq_down{
+				font-size: 26px;
+				margin-top: 2vw;
+				transition:all 2s;
+			}
+			.section-test .wrap .content h2{
+				margin-top: 50px;
+			}
+			.section-test .wrap .content p{
+				color: #888788;
+				line-height: 26px;
+				font-size: 16px;
+				margin-top: 30px;
+			}
+			.section-test .wrap .rows{
+				margin-top: 80px;
+			}
+			.section-test .wrap .row{
+				/*background: yellow;*/
+				width: 80vw;
+				margin: 0 auto;
+				padding: 45px 2vw;		
+				/*盒子从左到右排列，有点像float:left，而且包含上下居中的功能*/	
+				display: flex;	
+				/*第一个和最后一个盒子与边缘的距离是每个盒子之间距离的一半，即整排盒子居中分布*/
+				/*justify-content: space-around;*/
+				border-top:1px solid #333 ;
+				color: #fff;
+			}
+			.section-test .wrap .row div{
+				border: 1px solid #000000;
+			}
+			.section-test .wrap .row div p:nth-child(1){
+				font-size: 26px;
+			}
+			.section-test .wrap .row div span{
+				font-size: 16px;
+			}
+			.section-test .wrap .sub_title{
+				color: #888788;
+				font-size: 16px;
+			}
+			.section-test .slideContent{
+				display:none;
+			}
+			.section-charge{
+				height: 56vw;
+				background: #fff;
+				background-size: 100% auto;
+				transition: all 1s;
+				overflow: hidden;
+			}
+			.section-charge .left,
+			.section-charge .right{
+				height: 100%;
+				padding: 10% 0 7% 0;
+			}
+			.section-charge .left{
+				width: 28%;
+				margin-left: 8%;
+			}
+			.section-charge .right{
+				width: 53%;
+				margin-right: 8%;
+			}
+			.section-charge .charge-text{
+				height: 35%;
+			}
+			.section-charge .charge-text ul{
+				position: relative;
+				top: 5vw;
+			}
+			.section-charge .charge-text .ant1{
+				padding-bottom: 15px; 
+			}
+			.section-charge .charge-text .ant2{
+				padding-bottom: 10px; 
+			}
+			.section-charge .charge-btn{
+				position: relative;
+				height: 10%;
+				margin-top: 10%;
+				top: 5vw;
+			}
+			.section-charge .charge-btn ul{
+				position: absolute;
+				top: 50%;
+			}
+			.section-charge .charge-btn li{								
+				width: 50px;
+				height: 2px;			
+				margin-right: 20px;
+				float: left;
+				cursor: pointer;
+				display: block;						
+				background: red;
+				opacity: 0.3;
+			}					
+			.section-charge .charge-btn .cq_active{
+				background: red;
+				opacity: 1;
+			}	
+			.section-charge .charge-btn li.changedBtn{
+				opacity: 1;
+			}
+			.section-charge .charge-btn li:hover{
+				opacity: 1;
+			}
+			.section-charge .charge-pic{
+				height: 100%;
+				position: relative;
+				top: 6vw;
+			}
+			.section-charge .charge-pic .lineNav{
+				display: flex;
+				justify-content: space-around;
+			}
+			.section-charge .charge-pic .lineNav li{
+				font-size: 16px;
+				cursor: pointer;
+				color: #999;				
+			}
+			.section-charge .charge-pic .lineNav li:hover{
+				color: #000000;
+			}
+			.section-charge .charge-pic .lineNav .cq_active{
+				color: #000000;
+			}
+			.section-charge .charge-pic .line-box img{
+				width: 100%;
+			}
+			.section-charge .charge-pic .line-box{
+				height: 100%;
+				position: relative;
+			}
+			.section-charge .charge-pic .line-box .lineImg{
+				width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    top: -81%;;
+			}
+			.section-charge .charge-pic .line-box .lineImg1{
+				width: 0;
+				background-image: url(../img/line-game.png);
+				background-repeat: no-repeat;
+			}
+			.section-charge .charge-pic .line-box .lineImg2{
+				background-image: url(../img/line-screen.png);
+				background-repeat: no-repeat;
+				display: none;
+			}
+			.section-charge .charge-pic .line-box .lineImg3{
+				background-image: url(../img/line-video.png);
+				background-repeat: no-repeat;
+				display: none;
+			}
+			.section-charge .charge-pic .pic1{
+				height: 100%;
+			}
+			.section-charge .charge-text .p-text{
+				width: 64%;
+			}
+			.section-charge .charge-text li{
+				position: absolute;
+			}
+			.section-charge .charge-text li:not(:first-child){
+				display: none;
+			}
+			.section-experience .first-out{
+				background: #000;
+			}
+			.section-experience .first-exp{
+				height: 62vw;
+				background: url(../img/phone-bg.jpg) no-repeat;
+				background-size: 100% auto;
+				text-align: center;
+    			color: #fff;
+    			position: relative;
+    			top: 10vw;
+			}
+			.section-experience .first-exp h1{
+				padding: 3% 0 0 0;
+				position: relative;
+				top: 5vw;
+			}
+			.section-experience .first-exp p{
+				padding: 3% 0 2% 0;
+				opacity: 0.5;
+				position: relative;
+				top: 5vw;
+			}
+			.section-experience .second-exp{
+				position: relative;
+				height: 73vw;
+				/*border: 1px solid #000000;*/
+				margin-top: -2vw;			
+			}
+			.section-experience .second-exp .pc-box{
+				position: relative;
+				top: 5vw;
+			}
+			.section-experience .second-exp .ox-Nav{
+				position: relative;
+				border-bottom: 2px solid #ccc;
+			    height: 50px;
+			    width: 40%;
+			    /*background: yellow;*/
+			    line-height: 50px;
+			    margin: 0 auto;
+			    display: flex;
+			}
+			.section-experience .second-exp h1{
+				padding-top: 6vw;
+    			text-align: center;
+			}
+			.section-experience .second-exp .ox-Nav li{				
+				/*position: absolute;*/
+			    /*border-bottom: 2px solid #000;*/
+			    color: #000000;
+			    margin-bottom: 0px;
+			    height: 50px;
+			    font-size: 20px;
+			    cursor: pointer;
+			    width: 33.3%;
+    			text-align: center;
+			}			
+			.section-experience .second-exp .ox-Nav li:nth-child(1){
+				/*left: 0;*/
+			}
+			.section-experience .second-exp .ox-Nav li:nth-child(2){
+				/*left: 40%;*/
+			}
+			.section-experience .second-exp .ox-Nav li:nth-child(3){
+				right: 0;
+			}
+			.section-experience .second-exp .ox-Nav li.cq_active{				
+				border-bottom: 2px solid #000;
+			}		
+			.section-experience .second-exp .ox-Nav li:not(:first-child){
+				opacity: 0.3;
+				border-bottom: 2px solid #ccc;
+			}	
+			.section-experience .second-exp .ox-Nav li:hover{	
+				opacity: 0.8;
+			}
+			.section-experience .second-exp .ox-Nav li.changed{
+				border-bottom: 2px solid #000;
+				opacity: 1;
+			}
+			.section-experience .second-exp .ox-text{				
+				width: 800px;
+			    margin: 0 auto;
+			    font-size: 16px;
+			    text-align: center;
+			    opacity: 0.7;
+			}
+			.section-experience .second-exp .ox-text li{
+				position: absolute;
+				width: 60%;
+    			left: 22%;
+			}
+			.section-experience .second-exp .ox-text li:not(:first-child){
+				display: none;
+			}
+			.section-experience .second-exp .slide-wrap{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 65%;
+				/*background: yellow;*/
+				overflow: hidden;
+			}
+			.section-experience .second-exp .slide-wrap ul{
+				/*margin-left: -200vw;*/
+			    position: absolute;
+			    height: 100%;
+			    width: 300vw;
+			}
+			.section-experience .second-exp .slide-wrap li{
+				position: relative;
+				width: 100vw;
+    			height: 100%;
+    			background-size: cover;
+    			float: left;
+			}
+			.section-experience .second-exp .slide-wrap li:nth-child(1){				       
+				background-image: url(../img/screen-bg.jpg);				
+			}
+			.section-experience .second-exp .slide-wrap li:nth-child(2) .mode-yellow{				       
+				background-image: url(../img/mode-yellow.jpg);				
+			}
+			.section-experience .second-exp .slide-wrap li:nth-child(2) .mode-gray{				       
+				background-image: url(../img/mode-gray.jpg);				
+			}
+			.section-experience .second-exp .slide-wrap li:nth-child(3) .mode-yellow{				       
+				background-image: url(../img/mode-yellow-night.jpg);				
+			}
+			.section-experience .second-exp .slide-wrap li:nth-child(3) .mode-gray{				       
+				background-image: url(../img/mode-gray-night.jpg);				
+			}
+			.section-experience .second-exp .slide-wrap .abs-box div{
+			    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    background-position: center;
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			}
+			.section-experience .second-exp .slide-wrap .abs-box input[type='range']{
+				position: absolute;
+			    bottom: 10%;
+			    width: 16%;
+			    left: 42%;
+			}
+			.section-hero .abs-fadeout p,
+			.section-hero .bg,
+			.section-dual-camera .first .first-top,
+			.section-dual-camera .first .con-progress,
+			.section-dual-camera .second .img-box,
+			.section-dual-camera .second .text-box .row .thumbnail img,
+			.section-dual-camera .second .text-box .thumbnail .caption h3,
+			.section-dual-camera .second .text-box .thumbnail .caption p,
+			.section-dual-camera .third h2,
+			.section-design .main-box h2,
+			.section-design .main-box p,
+			.section-design .img-box li,
+			.section-design .sub-box .sub-img-ul .sub-item,
+			.section-design .sub-btn-ul,
+			.section-color .color-gray,
+			.section-charge .charge-text ul,
+			.section-charge .charge-btn,
+			.section-charge .charge-pic,
+			.section-charge .charge-pic .line-box .lineImg1,
+			.section-experience .first-exp h1,
+			.section-experience .first-exp p,
+			.section-experience .first-exp,
+			.section-experience .second-exp .pc-box,
+			.section-charge .charge-pic .line-box .lineImg
+			{
+				transition: all 2s ease;
+			}
+			@media (max-width: 640px) {
+				.section-video a{	
+					top: 10vw;
+					left: 46%;
+				}
+				.section-hero .bg{					
+					background-size: auto 200%;																	
+				}
 			}

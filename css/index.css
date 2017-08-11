@@ -55,6 +55,8 @@
 			.cq_navbar_header .navbar-collapse {
 				margin: 0;
 				padding: 0;
+				/*position: absolute;*/
+    			z-index: 999;
 			}
 			.cq_navbar_header{
 				height: 80px;
@@ -425,6 +427,9 @@
 				.main_img4 .col_thum .thumbnail img {
 					width: 100%;
 				}
+				.cq_navbar_header .navbar-collapse{
+					position: relative;
+				}
 				
 			}						
 /*正文结束*/
@@ -508,7 +513,7 @@
 				height: 8px;
 				float: right;
 				/*图片27*32*/
-				background-image: url(img/index.png);
+				background-image: url(../img/index.png);
 				background-position:0 -8px;
 				background-size: 14px 16px;
 				position: absolute;
@@ -520,7 +525,7 @@
 				height: 8px;
 				float: right;
 				/*图片27*32*/
-				background-image: url(img/index.png);
+				background-image: url(../img/index.png);
 				background-position:0 0;
 				background-size: 14px 16px;
 				position: absolute;
